@@ -113,7 +113,7 @@ function(read_targetconfig)
       set(CURRSYS "${SIMULATION}")
     else (SIMULATION)
       # get the target system arch identifier string
-      set(CURRSYS "${TGT${TGTID}_SYSTEM}")
+      set(CURRSYS "${TGT${TGTID}_NAMEx}")
     endif (SIMULATION)
     
     # make sure the string is safe for a variable name
